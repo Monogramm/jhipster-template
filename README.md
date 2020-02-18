@@ -11,16 +11,19 @@
 
 [![Managed with Taiga.io](https://img.shields.io/badge/Managed%20with-TAIGA.io-709f14.svg)](https://tree.taiga.io/project/monogrammbot-monogrammjhipster-template/ "Managed with Taiga.io")
 -->
+
 <!--
 [TODO] If project uses Travis-CI:
 
 [![Build Status](https://travis-ci.org/Monogramm/jhipster-template.svg)](https://travis-ci.org/Monogramm/jhipster-template)
 -->
+
 <!--
 [TODO] If project uses Coveralls for code coverage:
 
 [![Coverage Status](https://coveralls.io/repos/github/Monogramm/jhipster-template/badge.svg?branch=master)](https://coveralls.io/github/Monogramm/jhipster-template?branch=master)
 -->
+
 <!--
 [TODO] If project is deployed to DockerHub:
 
@@ -29,6 +32,7 @@
 [![Docker Version](https://images.microbadger.com/badges/version/monogramm/jhipster-template.svg)](https://microbadger.com/images/monogramm/jhipster-template)
 [![Docker Size](https://images.microbadger.com/badges/image/monogramm/jhipster-template.svg)](https://microbadger.com/images/monogramm/jhipster-template)
 -->
+
 <!--
 [TODO] If project is deployed to Heroku:
 
@@ -105,7 +109,7 @@ To ensure everything worked, run:
 java -jar target/*.jar
 ```
 
-Then navigate to [http://localhost:8080](http://localhost:8080) in your browser.
+Then navigate to <http://localhost:8080> in your browser.
 
 <!--
 [TODO] If project is deployed to Heroku:
@@ -137,7 +141,7 @@ Then navigate to [http://localhost:8080](http://localhost:8080) in your browser.
 
 **Monogramm**
 
-- Website: https://www.monogramm.io
+- Website: <https://www.monogramm.io>
 - Github: [@Monogramm](https://github.com/Monogramm)
 
 ## :handshake: Contributing
