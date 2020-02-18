@@ -4,24 +4,14 @@
 [![License: AGPL v3][uri_license_image]][uri_license]
 [![Docs](https://img.shields.io/badge/Docs-Github%20Pages-blue)](https://monogramm.github.io/jhipster-template/)
 [![gitmoji-changelog](https://img.shields.io/badge/Changelog-gitmoji-blue.svg)](https://github.com/frinyvonnick/gitmoji-changelog)
+[![Build Status](https://travis-ci.org/Monogramm/jhipster-template.svg)](https://travis-ci.org/Monogramm/jhipster-template)
+[![Coverage Status](https://coveralls.io/repos/github/Monogramm/jhipster-template/badge.svg?branch=master)](https://coveralls.io/github/Monogramm/jhipster-template?branch=master)
 [![GitHub stars](https://img.shields.io/github/stars/Monogramm/jhipster-template?style=social)](https://github.com/Monogramm/jhipster-template)
 
 <!--
 [TODO] If project uses Taiga for project management:
 
 [![Managed with Taiga.io](https://img.shields.io/badge/Managed%20with-TAIGA.io-709f14.svg)](https://tree.taiga.io/project/monogrammbot-monogrammjhipster-template/ "Managed with Taiga.io")
--->
-
-<!--
-[TODO] If project uses Travis-CI:
-
-[![Build Status](https://travis-ci.org/Monogramm/jhipster-template.svg)](https://travis-ci.org/Monogramm/jhipster-template)
--->
-
-<!--
-[TODO] If project uses Coveralls for code coverage:
-
-[![Coverage Status](https://coveralls.io/repos/github/Monogramm/jhipster-template/badge.svg?branch=master)](https://coveralls.io/github/Monogramm/jhipster-template?branch=master)
 -->
 
 <!--
