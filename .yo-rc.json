@@ -1,0 +1,56 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.monogramm.jhipster",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.4.1",
+    "applicationType": "monolith",
+    "baseName": "template",
+    "packageName": "com.monogramm.jhipster",
+    "packageFolder": "com/monogramm/jhipster",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "caffeine",
+    "enableHibernateCache": true,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZDc2NTEzNDA2Y2I3M2U4ODI3MTkxYzY1YzcyOTkyZmFlYmY1ZmMzYmVhODgzYTJkYTMxZDMxMDlmZWQ4MzIzYzc3MGQ0MjUyZmQ4MWU3ZGE3MmMyNDA2NDkzM2VkM2MwYmRjZTM3NWUzMDdlOGM3MDcwZmZlNDYxY2EwNzFjMGU=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "vue",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "testFrameworks": ["gatling", "cucumber", "protractor"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-vuejs",
+        "version": "1.5.1"
+      },
+      {
+        "name": "generator-jhipster-paypal",
+        "version": "1.0.5"
+      }
+    ],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en", "fr", "ru"],
+    "blueprints": [
+      {
+        "name": "generator-jhipster-vuejs",
+        "version": "1.5.1"
+      }
+    ]
+  }
+}
