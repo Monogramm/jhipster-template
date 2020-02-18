@@ -41,10 +41,12 @@ install:
   - npm install
 script:
   - chmod +x mvnw
-  - ./mvnw -ntp checkstyle:check
+  #- ./mvnw -ntp checkstyle:check
   - ./mvnw -ntp clean verify jacoco:report coveralls:report
   - ./mvnw -ntp com.github.eirslett:frontend-maven-plugin:npm -Dfrontend.npm.arguments='run test' -Dmaven.repo.local=$MAVEN_USER_HOME
   - ./mvnw -ntp verify -Pprod -DskipTests
+after_success:
+  - ./mvnw -ntp checkstyle:check
 notifications:
   webhooks:
     on_success: change  # options: [always|never|change] default: always
