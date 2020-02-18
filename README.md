@@ -1,182 +1,159 @@
-# template
+[uri_license]: http://www.gnu.org/licenses/agpl.html
+[uri_license_image]: https://img.shields.io/badge/License-AGPL%20v3-blue.svg
 
-This application was generated using JHipster 6.4.1, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v6.4.1](https://www.jhipster.tech/documentation-archive/v6.4.1).
+[![License: AGPL v3][uri_license_image]][uri_license]
+[![Docs](https://img.shields.io/badge/Docs-Github%20Pages-blue)](https://monogramm.github.io/jhipster-template/)
+[![gitmoji-changelog](https://img.shields.io/badge/Changelog-gitmoji-blue.svg)](https://github.com/frinyvonnick/gitmoji-changelog)
+[![GitHub stars](https://img.shields.io/github/stars/Monogramm/jhipster-template?style=social)](https://github.com/Monogramm/jhipster-template)
 
-## Development
+<!--
+[TODO] If project uses Taiga for project management:
 
-Before you can build this project, you must install and configure the following dependencies on your machine:
+[![Managed with Taiga.io](https://img.shields.io/badge/Managed%20with-TAIGA.io-709f14.svg)](https://tree.taiga.io/project/monogrammbot-monogrammjhipster-template/ "Managed with Taiga.io")
+-->
+<!--
+[TODO] If project uses Travis-CI:
 
-1. [Node.js][]: We use Node to run a development web server and build the project.
-   Depending on your system, you can install Node either from source or as a pre-packaged bundle.
+[![Build Status](https://travis-ci.org/Monogramm/jhipster-template.svg)](https://travis-ci.org/Monogramm/jhipster-template)
+-->
+<!--
+[TODO] If project uses Coveralls for code coverage:
 
-After installing Node, you should be able to run the following command to install development tools.
-You will only need to run this command when dependencies change in [package.json](package.json).
+[![Coverage Status](https://coveralls.io/repos/github/Monogramm/jhipster-template/badge.svg?branch=master)](https://coveralls.io/github/Monogramm/jhipster-template?branch=master)
+-->
+<!--
+[TODO] If project is deployed to DockerHub:
 
-    npm install
+[![Docker Automated buid](https://img.shields.io/docker/cloud/build/monogramm/jhipster-template.svg)](https://hub.docker.com/r/monogramm/jhipster-template/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/monogramm/jhipster-template.svg)](https://hub.docker.com/r/monogramm/jhipster-template/)
+[![Docker Version](https://images.microbadger.com/badges/version/monogramm/jhipster-template.svg)](https://microbadger.com/images/monogramm/jhipster-template)
+[![Docker Size](https://images.microbadger.com/badges/image/monogramm/jhipster-template.svg)](https://microbadger.com/images/monogramm/jhipster-template)
+-->
+<!--
+[TODO] If project is deployed to Heroku:
 
-We use npm scripts and [Webpack][] as our build system.
+[![Deployed with](https://img.shields.io/badge/Deployed%20with-Heroku-blueviolet)](https://jhipster-template.herokuapp.com "Heroku")
+-->
 
-Run the following commands in two separate terminals to create a blissful development experience where your browser
-auto-refreshes when files change on your hard drive.
+# **JHipster template**
 
-    ./mvnw
-    npm start
+> :alembic: Template repository for JHipster project developments.
 
-Npm is also used to manage CSS and JavaScript dependencies used in this application. You can upgrade dependencies by
-specifying a newer version in [package.json](package.json). You can also run `npm update` and `npm install` to manage dependencies.
-Add the `help` flag on any command to see how you can use it. For example, `npm help update`.
+This project is a sample JHipster application with additionnal module and some custom developments.
 
-The `npm run` command will list all of the scripts available to run for this project.
+Here is the list of additional features integrated or used in this template:
 
-### Service workers
+- [jhipster-vuejs](https://github.com/jhipster/jhipster-vuejs)
+- [generator-jhipster-paypal](https://github.com/contribution-jhipster-uga/generator-jhipster-paypal)
+- [generator-jhipster-postgresuuid-converter](https://github.com/amitjindal/generator-jhipster-postgresuuid-converter)
+- [GitHub Pages documentation](https://pages.github.com/)
+- [Travis-CI automation](https://travis-ci.org/)
 
-Service workers are commented by default, to enable them please uncomment the following code.
+:construction: **This project is still in development!**
 
-- The service worker registering script in index.html
+## :blue_book: Docs
 
-```html
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./service-worker.js').then(function() {
-      console.log('Service Worker Registered');
-    });
-  }
-</script>
+See GitHub Pages at [monogramm.github.io/jhipster-template](https://monogramm.github.io/jhipster-template/).
+
+## :chart_with_upwards_trend: Changes
+
+All notable changes to this project will be documented in [CHANGELOG](./CHANGELOG.md) file.
+
+This CHANGELOG is generated with :heart: by [gitmoji-changelog](https://github.com/frinyvonnick/gitmoji-changelog)
+This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+<!--
+[TODO] If project uses Taiga for project management:
+
+## :bookmark: Roadmap
+
+See [Taiga.io](https://tree.taiga.io/project/monogrammbot-monogrammjhipster-template/ "Taiga.io monogrammbot-monogrammjhipster-template")
+
+-->
+
+## :construction: Install
+
+```sh
+npm install
 ```
 
-Note: workbox creates the respective service worker and dynamically generate the `service-worker.js`
+## :rocket: Usage
 
-### Managing dependencies
+### Development
 
-For example, to add [Leaflet][] library as a runtime dependency of your application, you would run following command:
+To run the backend:
 
-    npm install --save --save-exact leaflet
-
-To benefit from TypeScript type definitions from [DefinitelyTyped][] repository in development, you would run following command:
-
-    npm install --save-dev --save-exact @types/leaflet
-
-Then you would import the JS and CSS files specified in library's installation instructions so that [Webpack][] knows about them:
-Edit [src/main/webapp/app/main.ts](src/main/webapp/app/main.ts) file:
-
-```
-import 'leaflet/dist/leaflet.js';
+```sh
+./mvnw
 ```
 
-Edit [src/main/webapp/content/scss/vendor.scss](src/main/webapp/content/scss/vendor.scss) file:
+To run the frontend:
 
+```sh
+npm start
 ```
-@import '~leaflet/dist/leaflet.scss';
+
+### Production
+
+```sh
+./mvnw -Pprod clean verify
 ```
 
-Note: there are still few other things remaining to do for Leaflet that we won't detail here.
-
-For further instructions on how to develop with JHipster, have a look at [Using JHipster in development][].
-
-### Using vue-cli
-
-You can also use [Vue CLI][] to display the project using vue UI.
-
-For example, the following command:
-
-    vue ui
-
-will generate open Vue Project Manager. From there, you'll be able to manage your project as any other Vue.js projects.
-
-## Building for production
-
-### Packaging as jar
-
-To build the final jar and optimize the template application for production, run:
-
-    ./mvnw -Pprod clean verify
-
-This will concatenate and minify the client CSS and JavaScript files. It will also modify `index.html` so it references these new files.
 To ensure everything worked, run:
 
-    java -jar target/*.jar
+```sh
+java -jar target/*.jar
+```
 
 Then navigate to [http://localhost:8080](http://localhost:8080) in your browser.
 
-Refer to [Using JHipster in production][] for more details.
+<!--
+[TODO] If project is deployed to Heroku:
 
-### Packaging as war
+### Demonstration
 
-To package your application as a war in order to deploy it to an application server, run:
+[Heroku jhipster-template.herokuapp.com](https://jhipster-template.herokuapp.com)
 
-    ./mvnw -Pprod,war clean verify
+-->
 
-## Testing
+## :white_check_mark: Run tests
 
-To launch your application's tests, run:
+```sh
 ./mvnw verify
-
-### Client tests
-
-Unit tests are run by [Jest][] and written with [Jasmine][]. They're located in [src/test/javascript/](src/test/javascript/) and can be run with:
-npm test
-
-For more information, refer to the [Running tests page][].
-
-### Code quality
-
-Sonar is used to analyse code quality. You can start a local Sonar server (accessible on http://localhost:9001) with:
-
-```
-docker-compose -f src/main/docker/sonar.yml up -d
 ```
 
-You can run a Sonar analysis with using the [sonar-scanner](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner) or by using the maven plugin.
-Then, run a Sonar analysis:
+<!--
+[TODO] If project is deployed to DockerHub:
 
-```
-./mvnw -Pprod clean verify sonar:sonar
-```
+## :whale: Supported tags
 
-If you need to re-run the Sonar phase, please be sure to specify at least the `initialize` phase since Sonar properties are loaded from the sonar-project.properties file.
+[Dockerhub monogramm/jhipster-template](https://hub.docker.com/r/monogramm/jhipster-template/)
 
-```
-./mvnw initialize sonar:sonar
-```
+* `latest`
 
-or
-For more information, refer to the [Code quality page][].
+-->
 
-## Using Docker to simplify development (optional)
+## :bust_in_silhouette: Authors
 
-You can use Docker to improve your JHipster development experience. A number of docker-compose configuration are available in the [src/main/docker](src/main/docker) folder to launch required third party services.
+**Monogramm**
 
-For example, to start a postgresql database in a docker container, run:
-docker-compose -f src/main/docker/postgresql.yml up -d
-To stop it and remove the container, run:
-docker-compose -f src/main/docker/postgresql.yml down
+- Website: https://www.monogramm.io
+- Github: [@Monogramm](https://github.com/Monogramm)
 
-You can also fully dockerize your application and all the services that it depends on.
-To achieve this, first build a docker image of your app by running:
-./mvnw -Pprod verify jib:dockerBuild
-Then run:
-docker-compose -f src/main/docker/app.yml up -d
-For more information refer to [Using Docker and Docker-Compose][], this page also contains information on the docker-compose sub-generator (`jhipster docker-compose`), which is able to generate docker configurations for one or several JHipster applications.
+## :handshake: Contributing
 
-## Continuous Integration (optional)
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Monogramm/jhipster-template/issues).
+[Check the contributing guide](./CONTRIBUTING.md).<br />
 
-To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`), this will let you generate configuration files for a number of Continuous Integration systems. Consult the [Setting up Continuous Integration][] page for more information.
+## :thumbsup: Show your support
 
-[jhipster homepage and latest documentation]: https://www.jhipster.tech
-[jhipster 6.4.1 archive]: https://www.jhipster.tech/documentation-archive/v6.4.1
-[using jhipster in development]: https://www.jhipster.tech/documentation-archive/v6.4.1/development/
-[using docker and docker-compose]: https://www.jhipster.tech/documentation-archive/v6.4.1/docker-compose
-[using jhipster in production]: https://www.jhipster.tech/documentation-archive/v6.4.1/production/
-[running tests page]: https://www.jhipster.tech/documentation-archive/v6.4.1/running-tests/
-[code quality page]: https://www.jhipster.tech/documentation-archive/v6.4.1/code-quality/
-[setting up continuous integration]: https://www.jhipster.tech/documentation-archive/v6.4.1/setting-up-ci/
-[node.js]: https://nodejs.org/
-[yarn]: https://yarnpkg.org/
-[webpack]: https://webpack.github.io/
-[vue cli]: https://cli.vuejs.org/
-[browsersync]: https://www.browsersync.io/
-[jest]: https://facebook.github.io/jest/
-[jasmine]: https://jasmine.github.io/2.0/introduction.html
-[protractor]: https://www.protractortest.org/
-[leaflet]: https://leafletjs.com/
-[definitelytyped]: https://definitelytyped.org/
+Give a :star: if this project helped you!
+
+## :page_facing_up: License
+
+Copyright © 2020 [Monogramm](https://github.com/Monogramm).<br />
+This project is [AGPL v3](uri_license) licensed.
+
+---
+
+_This README was generated with :heart: by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
