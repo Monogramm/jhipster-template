@@ -480,6 +480,12 @@
                 <groupId>org.eluder.coveralls</groupId>
                 <artifactId>coveralls-maven-plugin</artifactId>
                 <version>${coveralls-maven-plugin.version}</version>
+                <configuration>
+                    <jacocoReports>
+                        <param>${jacoco.utReportFile}</param>
+                        <param>${jacoco.itReportFile}</param>
+                    </jacocoReports>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.liquibase</groupId>
