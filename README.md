@@ -42,6 +42,7 @@ Here is the list of additional features integrated or used in this template:
 - [generator-jhipster-postgresuuid-converter](https://github.com/amitjindal/generator-jhipster-postgresuuid-converter)
 - [GitHub Pages documentation](https://pages.github.com/)
 - [Travis-CI automation](https://travis-ci.org/)
+- [Coveralls.io](https://coveralls.io/) backend test coverage using [coveralls-maven-plugin](https://github.com/trautonen/coveralls-maven-plugin)
 
 :construction: **This project is still in development!**
 
