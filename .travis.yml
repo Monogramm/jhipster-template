@@ -38,13 +38,21 @@ before_install:
   - node -v
   - npm -v
 install:
+  # Install project
   - npm install
 script:
   - chmod +x mvnw
-  #- ./mvnw -ntp checkstyle:check
+  # Execute project Unit & Integration Tests
   - ./mvnw -ntp clean verify jacoco:report coveralls:report
   - ./mvnw -ntp com.github.eirslett:frontend-maven-plugin:npm -Dfrontend.npm.arguments='run test' -Dmaven.repo.local=$MAVEN_USER_HOME
-  - ./mvnw -ntp verify -Pprod -DskipTests
+  # Build project production JAR and Dockerfile
+  - ./mvnw -ntp verify jib:dockerBuild -Pprod -DskipTests
+  - docker images
+  - docker images | grep 'template'
+  # Run project production docker container
+  - docker-compose -f src/main/docker/app.yml up -d && sleep 120
+  - docker-compose logs "template-app"
+  - docker-compose ps "template-app" | grep "Up" || exit 1
 after_success:
   - ./mvnw -ntp checkstyle:check
 notifications:
