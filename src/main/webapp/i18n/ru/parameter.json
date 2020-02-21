@@ -1,0 +1,26 @@
+{
+  "templateApp": {
+    "parameter": {
+      "home": {
+        "title": "Parameters",
+        "createLabel": "Создать новый Parameter",
+        "createOrEditLabel": "Создать или отредактировать Parameter",
+        "search": "Найти Parameter",
+        "notFound": "No Parameters found"
+      },
+      "created": "Новый Parameter создан с идентификатором {{ param }}",
+      "updated": "Parameter обновлен с идентификатором {{ param }}",
+      "deleted": "Parameter удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Parameter {{ id }}?"
+      },
+      "detail": {
+        "title": "Parameter"
+      },
+      "name": "Name",
+      "description": "Description",
+      "type": "Type",
+      "value": "Value"
+    }
+  }
+}

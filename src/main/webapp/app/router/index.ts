@@ -26,6 +26,12 @@ const JhiAuditsComponent = () => import('../admin/audits/audits.vue');
 const JhiMetricsComponent = () => import('../admin/metrics/metrics.vue');
 const JhiTrackerComponent = () => import('../admin/tracker/tracker.vue');
 /* tslint:disable */
+// prettier-ignore
+const Parameter = () => import('../entities/parameter/parameter.vue');
+// prettier-ignore
+const ParameterUpdate = () => import('../entities/parameter/parameter-update.vue');
+// prettier-ignore
+const ParameterDetails = () => import('../entities/parameter/parameter-details.vue');
 // jhipster-needle-add-entity-to-router-import - JHipster will import entities to the router here
 
 Vue.use(Router);
@@ -149,6 +155,31 @@ export default new Router({
       name: 'JhiTrackerComponent',
       component: JhiTrackerComponent,
       meta: { authorities: [Authority.ADMIN] }
+    }
+    ,
+    {
+      path: '/parameter',
+      name: 'Parameter',
+      component: Parameter,
+      meta: { authorities: [Authority.USER] }
+    },
+    {
+      path: '/parameter/new',
+      name: 'ParameterCreate',
+      component: ParameterUpdate,
+      meta: { authorities: [Authority.USER] }
+    },
+    {
+      path: '/parameter/:parameterId/edit',
+      name: 'ParameterEdit',
+      component: ParameterUpdate,
+      meta: { authorities: [Authority.USER] }
+    },
+    {
+      path: '/parameter/:parameterId/view',
+      name: 'ParameterView',
+      component: ParameterDetails,
+      meta: { authorities: [Authority.USER] }
     }
     // jhipster-needle-add-entity-to-router - JHipster will add entities to the router here
   ]

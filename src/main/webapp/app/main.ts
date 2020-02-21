@@ -27,6 +27,7 @@ import TranslationService from '@/locale/translation.service';
 import ConfigurationService from '@/admin/configuration/configuration.service';
 
 import TrackerService from './admin/tracker/tracker.service';
+import ParameterService from '@/entities/parameter/parameter.service';
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 Vue.config.productionTip = false;
@@ -87,6 +88,7 @@ new Vue({
     trackerService: () => trackerService,
     alertService: () => alertService,
     translationService: () => translationService,
+    parameterService: () => new ParameterService(),
     // jhipster-needle-add-entity-service-to-main - JHipster will import entities services here
     accountService: () => accountService
   },

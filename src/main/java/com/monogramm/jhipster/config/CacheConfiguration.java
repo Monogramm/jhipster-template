@@ -41,6 +41,7 @@ public class CacheConfiguration {
             createCache(cm, com.monogramm.jhipster.domain.User.class.getName());
             createCache(cm, com.monogramm.jhipster.domain.Authority.class.getName());
             createCache(cm, com.monogramm.jhipster.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.monogramm.jhipster.domain.Parameter.class.getName());
             // jhipster-needle-caffeine-add-entry
         };
     }
